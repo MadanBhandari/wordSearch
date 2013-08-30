@@ -1,0 +1,73 @@
+@import url('reset.css');
+
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Ubuntu', Tahoma;
+	line-height: 100%;
+	outline: none;
+}
+
+html {
+	border: 0px;
+}
+
+body {
+	color: #000;
+	font-size: 15pt;
+	cursor: default;
+}
+
+.clear {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+	height: 0px;
+}
+
+td
+{
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	border: 1px solid black;
+	position: relative;
+}
+
+table
+{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: moz-none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#wordsCollection
+{
+	width: 200px;
+	float: right;
+	border: 1px solid black;
+}
+
+#wordsCollection > span
+{
+	display: block;
+	padding: 20px;
+}
+
+#wordsImages
+{
+	width: 200px;
+	float: left;
+	border: 1px solid black;
+	position: relative;
+}
+
+#wordsImages > img
+{
+	display: none;
+}

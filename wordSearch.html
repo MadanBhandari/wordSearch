@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Word Search</title>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+<script src="js/html5/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<section>
+	<br/>
+	<h3 align="center">Word Search</h3>
+    <hr>
+    <div class="clear"></div>
+    <aside id="wordsCollection">
+    <!-- data filled by wordSearch.js -->
+    </aside>
+    
+    <aside id="wordsImages">
+    <!-- img filled by wordSearch.js -->
+    </aside>
+    
+    <article style="width: 500px; margin: 0 auto; border: 1px solid black;">
+        <table id="wordSearch">
+            <tr>
+                <td class="wafers">W</td>
+                <td id="ashok" class="ashok shah">Z</td>
+                <td>F</td>
+                <td>P</td>
+                <td>I</td>
+                <td class="juice">J</td>
+                <td class="juice">U</td>
+                <td class="juice">I</td>
+                <td class="juice">C</td>
+                <td class="juice">E</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td class="wafers">A</td>
+                <td class="cake">C</td>
+                <td>A</td>
+                <td>G</td>
+                <td>N</td>
+                <td>K</td>
+                <td>M</td>
+                <td>D</td>
+                <td>L</td>
+                <td>J</td>
+                <td class="pizza">P</td>
+            </tr>
+            <tr>
+                <td class="wafers">F</td>
+                <td class="cake">A</td>
+                <td>J</td>
+                <td class="noodles">N</td>
+                <td class="noodles">O</td>
+                <td class="noodles">O</td>
+                <td class="noodles">D</td>
+                <td class="noodles">L</td>
+                <td class="noodles">E</td>
+                <td class="noodles">S</td>
+                <td class="pizza">I</td>
+            </tr>
+            <tr>
+                <td class="wafers">E</td>
+                <td class="cake">K</td>
+                <td>M</td>
+                <td>Y</td>
+                <td>S</td>
+                <td>B</td>
+                <td>S</td>
+                <td>C</td>
+                <td>F</td>
+                <td>G</td>
+                <td class="pizza">Z</td>
+            </tr>
+            <tr>
+                <td class="wafers">R</td>
+                <td class="cake">E</td>
+                <td>E</td>
+                <td>K</td>
+                <td>H</td>
+                <td>F</td>
+                <td>I</td>
+                <td>N</td>
+                <td>M</td>
+                <td>K</td>
+                <td class="pizza">Z</td>
+            </tr>
+            <tr>
+                <td class="wafers">S</td>
+                <td>T</td>
+                <td>K</td>
+                <td>V</td>
+                <td>A</td>
+                <td>O</td>
+                <td>N</td>
+                <td>P</td>
+                <td>G</td>
+                <td>E</td>
+                <td class="pizza">A</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td class="sandwich">S</td>
+                <td class="sandwich">A</td>
+                <td class="sandwich">N</td>
+                <td class="sandwich">D</td>
+                <td class="sandwich">W</td>
+                <td class="sandwich">I</td>
+                <td class="sandwich">C</td>
+                <td class="sandwich">H</td>
+                <td>M</td>
+                <td>R</td>
+            </tr>
+        </table>
+    </article>
+</section>
+
+<script src="js/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/wordSearch.js" type="text/javascript"></script>
+<script>
+
+function completeActivity()
+{
+	$('body').append('<h3 style="position: absolute;top: 10%;text-align: center;width: 100%;background: rgba(255, 255, 255, 0.62);height: 500px;font-size: 50px;padding-top: 152px;">Activity Completed</h3>');
+}
+
+var wafers = new word("wafers", "red", "wafers.png");
+var cake = new word("cake", "Blue", "cake.png");
+var juice = new word("juice", "green", "juice.png");
+var noodles = new word("noodles", "yellow", "noodles.png");
+var sandwich = new word("sandwich", "turquoise", "sandwich.png");
+var pizza = new word("pizza", "grey", "pizza.png");
+	
+</script>
+</body>
+</html>
